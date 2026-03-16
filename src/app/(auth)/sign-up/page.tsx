@@ -14,16 +14,21 @@ export default async function SignUpPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50">
-      <div className="w-full max-w-md rounded-xl bg-white p-8 shadow">
-        <h1 className="mb-2 text-2xl font-semibold">Create your account</h1>
-        <p className="mb-6 text-sm text-zinc-600">
+    <div className="flex min-h-screen items-center justify-center bg-slate-950">
+      <div className="w-full max-w-md rounded-2xl bg-slate-900/80 p-8 shadow-lg ring-1 ring-slate-800">
+        <h1 className="mb-2 text-2xl font-semibold text-slate-50">
+          Create your account
+        </h1>
+        <p className="mb-6 text-sm text-slate-400">
           Start building your story bibles and chapters.
         </p>
         <SignUpForm />
-        <p className="mt-4 text-sm text-zinc-600">
+        <p className="mt-4 text-sm text-slate-400">
           Already have an account?{" "}
-          <Link href="/sign-in" className="font-medium text-zinc-900 underline">
+          <Link
+            href="/sign-in"
+            className="font-medium text-indigo-400 underline"
+          >
             Sign in
           </Link>
         </p>

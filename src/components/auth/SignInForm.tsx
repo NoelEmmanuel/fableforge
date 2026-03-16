@@ -42,7 +42,7 @@ export function SignInForm() {
         </div>
       )}
       <div className="space-y-1">
-        <label className="block text-sm font-medium text-zinc-700">
+        <label className="block text-sm font-medium text-slate-200">
           Email
         </label>
         <input
@@ -50,11 +50,11 @@ export function SignInForm() {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-md border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"
+          className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 outline-none focus:border-indigo-400 focus:ring-1 focus:ring-indigo-400"
         />
       </div>
       <div className="space-y-1">
-        <label className="block text-sm font-medium text-zinc-700">
+        <label className="block text-sm font-medium text-slate-200">
           Password
         </label>
         <input
@@ -62,13 +62,13 @@ export function SignInForm() {
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full rounded-md border border-zinc-300 px-3 py-2 text-sm outline-none focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900"
+          className="w-full rounded-md border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 outline-none focus:border-indigo-400 focus:ring-1 focus:ring-indigo-400"
         />
       </div>
       <button
         type="submit"
         disabled={loading}
-        className="flex w-full items-center justify-center rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white transition hover:bg-zinc-800 disabled:opacity-60"
+        className="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-medium text-slate-50 transition hover:bg-indigo-400 disabled:opacity-60"
       >
         {loading ? "Signing in..." : "Sign in"}
       </button>
